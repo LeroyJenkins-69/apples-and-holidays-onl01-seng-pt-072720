@@ -30,7 +30,7 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |seas, holi|
     puts "#{seas.capitalize}:"
     holi.each do |holid, sup|
-      puts"  #{holid.tos.split('').map {|v| v.capitalize }.join(" ") }: #{sup.join(", ")}"
+      puts"  #{holid.to_s.split('').map {|v| v.capitalize }.join(" ") }: #{sup.join(", ")}"
     end
   end
 end
